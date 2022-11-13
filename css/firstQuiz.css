@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.fstQuiz {
+    color: aliceblue;
+    background-color: coral;
+    width: 200px;
+    padding: 20px;
+    margin: 75px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.fstQuiz::after,
+.fstQuiz::before {
+    content: "";
+    background-color: coral;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.fstQuiz::after {
+    transform: skew(-15deg,-15deg);
+}
+
+.fstQuiz::before {
+    transform: skew(15deg,15deg);
+}

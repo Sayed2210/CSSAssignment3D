@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.thdQuiz {
+    background-color: gray;
+    width: 200px;
+    height: 200px;
+    border-bottom: 5px black solid;
+    margin: 145px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.thdQuiz::before {
+    content: '';
+    background-color: black;
+    width: 14.5%;
+    height: 14.5%;
+    position: absolute;
+    border: 5px solid;
+    border-color: transparent transparent aliceblue aliceblue;
+    transform: rotate(-45deg) translate(70px,-68px);
+}
+
